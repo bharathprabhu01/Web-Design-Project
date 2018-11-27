@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+span {
+  font-size: 1.1em;
+  cursor: pointer;
+  /*padding-left: 10px;*/
+  display: inline;
+  color: #fff;
+}
+
+#homePage > a {
+    color: white;
+    text-decoration: none;
+}
+
+#homePage > a:hover 
+{
+     color:white; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+#hamburger {
+  font-size: 1em;
+  cursor: pointer;
+  padding: 10px;
+  display: inline;
+  color: #fff;
+}
+
+header {
+  background-color: #AD2217;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+/*.btn {
+  text-decoration: none;
+  color: #000;
+}*/
+
+.container {
+  padding: 20px;  
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;  
+    background-color: #AD2217;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 0px 32px 0px 32px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav p {
+    padding: 30px 32px 0px 32px;
+    text-decoration: none;
+    font-size: .8em;
+    color: #CB8F8F;
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;},
+  .sidenav a {font-size: 18px;}
+}
