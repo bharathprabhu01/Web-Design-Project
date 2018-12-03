@@ -1,6 +1,24 @@
-a {
-    width: 100%;
-    text-align: left;
-    padding: 7%;
-    font-size: 1.5em;
-  }
+@media screen and (max-width: 576px)  {
+	.container a { font-size: 1em; }
+}
+
+@media screen and (min-width: 580px) and (max-width: 770px)  {
+  .container a { font-size: 0.5em; }
+}
+
+@media screen and (min-width: 770px) and (max-width: 989px)  {
+	.container a { font-size: 0.5em; }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1199px)  {
+	.container a { font-size: 1em; }
+}
+
+@media screen and (min-width: 1200px)  {
+	.container a { font-size: 1em; }
+}
+
+#pageLinks a {
+  text-align: left;
+  width: 100%;
+}
