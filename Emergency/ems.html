@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Carnegie Mellon Police Department</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel='icon' href='logo.png' type='image/x-icon'/>
+
+
+</head>
+<body>
+
+  <header>
+      <div id="side-navigation" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p> Health </p>
+        <a href="#">University Health</a>
+        <a href="#">Wellness Initiatives</a>
+
+        <p> Support </p>
+        <a href="#">Office of Disability</a>
+        <a href="#">Counseling and Psychological Services</a>
+        <a href="#">Title IX</a>
+
+        <p> Emergency </p>
+        <a href="cmpd.html">Carnegie Mellon Police Department</a>
+        <a href="ems.html">CMU Emergency Medical Services</a>
+
+        <p> Student Living </p>
+        <a href="#">The HUB</a>
+        <a href="#">Desk Services</a>
+        <a href="#">Housing and Dining Services</a>
+
+        <p> Academic/Career </p>
+        <a href="#">Academic Development</a>
+        <a href="#">Global Communication Center</a>
+        <a href="#">Intercultural Communication</a>
+        <a href="#">Career &amp; Professional Development</a>
+        <a href="#">Undergraduate Research Office</a>
+
+        <p> Additional Student Resources </p>
+        <a href="#">Tartan Ink</a>
+        <a href="#">Housing and Dining Services</a>
+        <a href="#">Center for Student Diversity &amp; Inclusion</a>
+        <a href="#">Alumni Association</a>
+        <a href="#">Computing Services</a>
+        <a href="#">Computing @ Carnegie Mellon</a>
+
+      </div>   
+      <span id = "hamburger" onclick="openNav()">&#9776;</span> 
+      <span id = "homePage"> 
+        <a href= "../index.html">Orientation Resource Guide</a>
+      </span>
+  </header>
+
+
+ <div class="container">
+  <h1> Emergency > CMU Emergency Medical Services </h1>
+
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Phone Number
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+      (412) 268-2323 
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Location &amp; Hours
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        No fixed location, trained EMS students are on duty at all times in
+        various locations on campus<br><br>
+        <strong>Hours: </strong>24/7.
+
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Services Provided
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+      <div class="card-body">
+        ○ Responds to all on-campus medical emergency calls including at
+          the Mellon Institute and the Residence on Fifth <br>
+        ○ Works with Pittsburgh EMS to get transport to hospitals <br>
+        ○ Usually arrive in ~5 minutes as compared to 911 (~ 10 minutes) <br>
+        ○ Can provide alternatives to ambulance transport for non-critical
+          patients <br>
+        ○ Free care from EMR and EMT certified students <br>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+  
+
+
+
+
+<script>
+function openNav() {
+    document.getElementById("side-navigation").style.width = "275px";
+}
+
+function closeNav() {
+    document.getElementById("side-navigation").style.width = "0";
+}
+</script>
+<!-- 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+ -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
