@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+a:hover {
+  text-decoration:none;
+}
 * {
   font-family: 'Open Sans', sans-serif;
 }
@@ -34,6 +37,7 @@ span {
   padding: 10px;
   display: inline;
   color: #fff;
+  clear: both;
 }
 
 header {
@@ -59,12 +63,12 @@ h1 {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 45px;
     left: 0;  
     background-color: #AD2217;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 10px;
 }
 
 .sidenav a {
@@ -94,7 +98,7 @@ h1 {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 0px;
     font-size: 36px;
     margin-left: 50px;
 }
