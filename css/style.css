@@ -74,7 +74,7 @@ h1 {
 .sidenav a {
     padding: 0px 32px 0px 32px;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 0.85em;
     color: #ffffff;
     display: block;
     transition: 0.3s;
@@ -83,7 +83,7 @@ h1 {
 .sidenav p {
     padding: 30px 32px 0px 32px;
     text-decoration: none;
-    font-size: .8em;
+    font-size: .75em;
     color: #CB8F8F;
     display: block;
     transition: 0.3s;
