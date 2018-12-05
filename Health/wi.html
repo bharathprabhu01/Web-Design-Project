@@ -14,7 +14,6 @@
 
   <header>
       <div id="side-navigation" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <p> Health </p>
         <a href="uhs.html">University Health</a>
         <a href="wi.html">Wellness Initiatives</a>
@@ -50,7 +49,7 @@
         <p>
 
       </div>   
-      <span id = "hamburger" onclick="openNav()">&#9776;</span> 
+      <span id = "hamburger" onclick="Nav()">&#9776;</span> 
       <span id = "homePage"> 
         <a href= "../index.html">Orientation Resource Guide</a>
       </span>
@@ -130,13 +129,20 @@
 
 
 <script>
-function openNav() {
-    document.getElementById("side-navigation").style.width = "325px";
-}
-
-function closeNav() {
-    document.getElementById("side-navigation").style.width = "0";
-}
+  var count = 0;
+  function Nav() {
+    if (count % 2 == 0){
+      document.getElementById("side-navigation").style.width = "300px";
+      document.getElementsByClassName("container")[0].classList.add('offset-md-3');
+      document.getElementsByClassName("container")[0].classList.add('col-md-9');
+    }
+    else{
+      document.getElementById("side-navigation").style.width = "0";
+      document.getElementsByClassName("container")[0].classList.remove('offset-md-3');
+      document.getElementsByClassName("container")[0].classList.remove('col-md-9');;
+    }
+    count ++;
+  }
 </script>
 <!-- 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

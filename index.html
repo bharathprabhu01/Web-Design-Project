@@ -23,7 +23,6 @@
     <!-- Navigation -->
     <header>
         <div id="side-navigation" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <p> Health </p>
           <a href="Health/uhs.html">University Health</a>
           <a href="Health/wi.html">Wellness Initiatives</a>
@@ -59,12 +58,12 @@
           <p>
 
         </div>   
-        <span id = "hamburger" onclick="openNav()">&#9776;</span> 
+        <span id = "hamburger" onclick="Nav()">&#9776;</span> 
         <span>Orientation Resource Guide</span>
     </header>
 
     <div class="jumbotron">
-      <div class="container">
+      <div class="container" id = "intro">
         <figure>
           <img src="images/orientationLogo.png" width = "27%" height = "27%" class="img-fixed mx-auto d-block">
         </figure>
@@ -72,7 +71,7 @@
         <br>
         <div class = "row">
           <div class= "offset-md-2 col-md-8">
-            This is the official resource guide for Carnegie Mellon University's Orientation 2018. It contains all necessary information regarding campus resources for OCs, OLs, HOCs, RAs and Freshman Year Students. If there is any discrepancy or incorrect information on the website please contact an administrator. 
+            This is the official resource guide for Carnegie Mellon University's Orientation 2018. It contains all necessary information regarding campus resources for OCs, OLs, HOCs, RAs and Freshman Year Students. If any discrepancy or incorrect information on the website, please contact an administrator. 
           </div>
         </div>
       </div>
@@ -197,12 +196,17 @@
 
     <!-- Custom Javascript -->
     <script>
-    function openNav() {
-        document.getElementById("side-navigation").style.width = "325px";
-    }
-
-    function closeNav() {
+    var count = 0;
+    function Nav() {
+      if (count % 2 == 0){
+        document.getElementById("side-navigation").style.width = "300px";
+        document.getElementById("intro").classList.add('offset-md-2');
+      }
+      else{
         document.getElementById("side-navigation").style.width = "0";
+        document.getElementById("intro").classList.remove('offset-md-2');
+      }
+      count ++;
     }
     </script>
 </body>
