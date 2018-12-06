@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Raleway:300');
 
+
+
+html, body {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
 a:hover {
   text-decoration:none;
 }
@@ -60,7 +69,7 @@ h1 {
   padding: 20px;  
 }
 .sidenav {
-    height: 110%;
+    min-height: 100%;
     width: 0;
     position: absolute;
     z-index: 1;

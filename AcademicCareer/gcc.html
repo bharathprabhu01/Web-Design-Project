@@ -140,13 +140,9 @@
   function Nav() {
     if (count % 2 == 0){
       document.getElementById("side-navigation").style.width = "300px";
-      document.getElementsByClassName("container")[0].classList.add('offset-md-3');
-      document.getElementsByClassName("container")[0].classList.add('col-md-9');
     }
     else{
       document.getElementById("side-navigation").style.width = "0";
-      document.getElementsByClassName("container")[0].classList.remove('offset-md-3');
-      document.getElementsByClassName("container")[0].classList.remove('col-md-9');;
     }
     count ++;
   }

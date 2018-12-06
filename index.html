@@ -62,7 +62,7 @@
         <span>Orientation Resource Guide</span>
     </header>
 
-    <div class="jumbotron">
+    <div class="jumbotron-fluid">
       <div class="container" id = "intro">
         <figure>
           <img src="images/orientationLogo.png" width = "27%" height = "27%" class="img-fixed mx-auto d-block">
@@ -70,12 +70,19 @@
         <br>
         <br>
         <div class = "row">
-          <div class= "offset-md-2 col-md-8">
-            This is the official resource guide for Carnegie Mellon University's Orientation 2018. It contains all necessary information regarding campus resources for OCs, OLs, HOCs, RAs and Freshman Year Students. If any discrepancy or incorrect information on the website, please contact an administrator. 
+          <div class= "offset-md-2 col-md-8 text-justify">
+            This is the official resource guide for Carnegie Mellon University's Orientation 2018. It contains all necessary information regarding campus resources for OCs, OLs, HOCs, RAs and Freshman Year Students.<br><br>
+
+            The Orientation &amp; First-Year Programs is responsible for providing vision and leadership for a comprehensive approach to new student orientation and transition programs. The office provides programs, opportunities and services to help students and family members successfully transition to the Carnegie Mellon community.<br><br>
+
+			     The office is responsible for program, development, marketing and implementation of orientation and transition programs. Areas of concentration include new student orientation, parent's programming such as Family Weekend, freshman programming series, and special event planning.
           </div>
         </div>
       </div>
     </div>
+
+    <br>
+    <br>
 
     <!-- Navigation to different pages -->
     <div class="container" id = "pageLinks">
@@ -184,8 +191,11 @@
             </a>
           </p>
       </div>
+    </div>
+  </div>
 
 
+        
   
 
 
@@ -200,11 +210,9 @@
     function Nav() {
       if (count % 2 == 0){
         document.getElementById("side-navigation").style.width = "300px";
-        document.getElementById("intro").classList.add('offset-md-2');
       }
       else{
         document.getElementById("side-navigation").style.width = "0";
-        document.getElementById("intro").classList.remove('offset-md-2');
       }
       count ++;
     }
